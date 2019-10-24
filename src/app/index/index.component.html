@@ -1,0 +1,12 @@
+<div class="container">
+
+  <div class="heading">
+    <h5>Popular Movies</h5>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-10 m-auto col-md-4 col-lg-3" *ngFor="let movie of movies ">
+      <app-movie-item [movie]="movie"></app-movie-item>
+    </div>
+  </div>
+</div>

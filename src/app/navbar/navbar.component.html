@@ -1,0 +1,30 @@
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="router-link-active">Bimflix</a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu" aria-controls="nav-menu"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars" style="color: red;"></i>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="nav-menu">
+
+    <div class="nav-item">
+      <button type="button" class="btn btn-sm btn-danger" [routerLink]="['/favorites']"
+        routerLinkActive="router-link-active">
+        Favorites <span class="badge badge-dark">{{favorites.length}}</span>
+        <span class="sr-only">Favorites</span>
+      </button>
+    </div>
+
+    <div class="search">
+      <span class="icon-holder">
+        <i [routerLink]="['/search']" routerLinkActive="router-link-active" class="fas fa-search"></i>
+      </span>
+    </div>
+  </div>
+</nav>

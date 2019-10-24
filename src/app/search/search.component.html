@@ -1,0 +1,21 @@
+<div class="row pt-5">
+  <div class="col-10 col-md-6 m-auto">
+    <!-- <form #search=ngForm (ngSubmit)="searchMovies(search)"> -->
+    <input #search (keyup)=handle(search.value) name="searchText" class="form-control" type="text">
+    <div class="text-center mt-2">
+      <input class="btn" type="submit" value="Search" style="background-color: black; color: white;">
+    </div>
+    <!-- </form> -->
+    <div class="list-group mt-3">
+      <a [routerLink]="['/movie', movie.id ]" class="list-group-item list-group-item-action"
+        *ngFor="let movie of results">
+        {{movie.title}} ({{movie.year}})
+      </a>
+    </div>
+
+    <div *ngIf="results.length === 0 && search.value.length > 0">
+      No results found for "{{search.value}}"
+    </div>
+    <div style="margin: 2.5em;"></div>
+  </div>
+</div>

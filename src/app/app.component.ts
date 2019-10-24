@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { MovieService } from './services/movies.service';
+import { IMovie } from './shared/movie.interface';
+import { Component, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Bimflix';
+  movies: IMovie[];
+
+  constructor(private movieService: MovieService) {
+    this.movieService.getMoviesAsync();
+  }
+
 }

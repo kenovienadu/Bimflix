@@ -1,0 +1,9 @@
+.heading {
+  color: black;
+  font-size: 0.7em;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.1em;
+  margin-top: 2em;
+  border-bottom: 2px solid black;
+}

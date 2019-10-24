@@ -1,0 +1,21 @@
+.more {
+  padding: 0.5em 0.8em;
+  background-color: red;
+}
+
+.grey-text {
+  color: rgb(53, 53, 53);
+}
+
+.movie-title {
+  height: 73px;
+}
+
+img {
+  background: dimgray
+}
+
+.card:hover img {
+  filter: brightness(0.3);
+  cursor: pointer;
+}

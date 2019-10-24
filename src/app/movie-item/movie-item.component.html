@@ -1,0 +1,34 @@
+<!-- Card -->
+<div class="card mb-4">
+  <!-- Card image -->
+  <img [routerLink]="['/movie', movie.id ]" class="card-img-top" src="{{movie.poster}}" alt="{{movie.title}}"
+    height="335px">
+
+  <!-- Card content -->
+  <div class="card-body">
+
+    <!-- Title -->
+    <div class="movie-title">
+      <span class="card-title">
+        <a class="grey-text">{{movie.title + ' (' + movie.year + ')'}}</a>
+      </span>
+    </div>
+    <!-- Text -->
+    <!-- Button -->
+    <div class="row">
+      <div class="col-6 text-left">
+        <a [routerLink]="['/movie', movie.id ]" class="btn btn-sm btn-danger more">More</a>
+      </div>
+      <div class="col-6 text-right pt-2" style="color: red;">
+        <span (click)="toggleFavorite()">
+          <i class="fas fa-heart" *ngIf="movie.isFavorite"></i>
+          <i class="far fa-heart" *ngIf="!movie.isFavorite"></i>
+        </span>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+<!-- Card -->

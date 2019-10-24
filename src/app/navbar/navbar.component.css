@@ -1,0 +1,60 @@
+.navbar.navbar-expand-lg {
+  background: black;
+  color: white;
+}
+
+.navbar-brand {
+  color: red;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-left: 0.5em;
+  font-weight: 800;
+}
+
+.btn-danger {
+  background: red !important;
+  margin-left: 1em;
+}
+
+@media screen and (min-width: 600px) {
+  .navbar-brand {
+    margin-left: 3em;
+  }
+
+  .btn-danger {
+    margin-left: 80em
+  }
+
+}
+
+.search {
+  margin: 0.5em;
+  font-style: italic;
+}
+
+input {
+  width: 18em;
+  height: 40px;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  font-style: italic;
+  border: 1px solid rgb(138, 0, 0);
+  border-radius: 8px;
+}
+
+.icon-holder {
+  padding: 0.3em;
+  /* background: white; */
+  color: rgb(253, 0, 0);
+  font-size: 1.3em;
+  border: none;
+  position: relative;
+  top: 2px;
+  /* right: 35px; */
+  border-radius: 8px;
+}
+
+.icon-holder:hover {
+  cursor: pointer;
+  color: white;
+}

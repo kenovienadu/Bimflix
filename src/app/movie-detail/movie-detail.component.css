@@ -1,0 +1,100 @@
+.poster {
+  height: 90vh;
+  background-size: cover;
+}
+
+.details {
+  padding: 2em;
+  padding-top: 0em;
+  min-height: 60%;
+  width: 100%;
+  color: white;
+  font-size: 0.8em;
+  margin-bottom: 1em;
+  background: rgb(14, 13, 13);
+}
+
+@media screen and (min-width: 700px) {
+  .details {
+    padding: 5em;
+    padding-top: 7em;
+    position: absolute;
+    top: 60px;
+    height: 97vh;
+    font-size: 1em;
+    background: linear-gradient(81deg, rgb(14, 13, 13) 0%, rgba(26, 24, 24, 0.821) 10%, rgba(255, 253, 253, 0.02002799410779932) 100%);
+  }
+
+  .half-on-desktop {
+    width: 50%;
+  }
+
+  img.img-fluid {
+    height: 95vh;
+  }
+}
+
+.info-wrapper {
+  background: red;
+  color: black;
+  display: inline-block;
+  padding: 0.3em;
+}
+
+.movie-title {
+  font-family: 'Helvetica Neue',
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.b {
+  color: red;
+  font-size: 1.8em;
+  font-weight: 800;
+  position: relative;
+  top: 20px;
+}
+
+.film {
+  font-weight: 300;
+  font-size: 0.8em;
+  position: relative;
+  top: 15px;
+  padding-left: 0.7em;
+}
+
+.right-arrow {
+  color: red;
+  margin-left: 0.5em;
+  font-size: 2em;
+  position: relative;
+  top: 10px;
+}
+
+.info {
+  color: white;
+  border-right: 1px solid white;
+  padding: 0 10px;
+  font-weight: 300;
+  font-size: 0.7em;
+}
+
+.info:last-child {
+  border: none;
+}
+
+.my-bold {
+  font-weight: bolder;
+}
+
+.back {
+  position: relative;
+  right: 8px;
+}
+
+.back:hover {
+  background: red !important;
+}

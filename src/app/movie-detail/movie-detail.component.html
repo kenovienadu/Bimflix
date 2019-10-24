@@ -1,0 +1,31 @@
+<div class="poster">
+  <img class="img-fluid" src="{{movie.cover}}" alt="" width="100%">
+  <div class="details">
+    <div>
+      <span class="b">B</span>
+      <span class="film">FILM</span>
+    </div>
+    <div class="movie-title">
+      {{movie.title}}
+      <span class="right-arrow">
+        <i class="fas fa-long-arrow-alt-right"></i>
+      </span>
+    </div>
+    <div class="info-wrapper">
+      <span class="info">{{movie.year}}</span>
+      <span class="info">{{movie.votes}}</span>
+      <span class="info">1hr 30min</span>
+      <!-- <span class="info">Romance</span> -->
+    </div>
+    <div class="text mt-3 mb-3 my-bold half-on-desktop">
+      {{movie.overview}}
+    </div>
+    <div class="pb-3 my-bold half-on-desktop" style="border-bottom: 2px solid red;">
+      <span style="color: rgb(128, 128, 128);">Starring:</span> James Wagner, Erlick Willner, Bobby Lo
+    </div>
+
+    <button [routerLink]="['/']" routerLinkActive="router-link-active" class="btn btn-sm btn-dark bg-red back">Back to
+      Home</button>
+  </div>
+  <!-- <div style="margin: 2.5em;"></div> -->
+</div>
