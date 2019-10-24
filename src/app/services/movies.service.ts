@@ -25,16 +25,19 @@ export class MovieService {
       this.favorites = this.session.get('bimflix.fav');
     }
 
+    // Use the movies stored in sessionStorage if present
     if (this.session.get('bimflix.movies')) {
       this.moviesList = this.session.get('bimflix.movies');
       return;
     }
 
+    // map the movies to a format based on the IMovie interface
     this.mapMovies().subscribe(data => {
       this.moviesList = this.createMoviesList(data);
     });
   }
 
+  // method to map the data to a format based on the IMovie interface
   createMoviesList(data: []): IMovie[] {
 
     const moviesList: IMovie[] = [];
@@ -66,6 +69,7 @@ export class MovieService {
     return moviesList;
   }
 
+  // method to save favorites and movies to sessionStorage
   saveFavToSession() {
     this.session.set('bimflix.fav', this.favorites);
     this.session.set('bimflix.movies', this.moviesList);
