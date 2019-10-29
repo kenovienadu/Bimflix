@@ -1,10 +1,12 @@
-<div class="container">
-  <div class="row mt-4">
-    <div class="col-10 m-auto col-md-4 col-lg-3" *ngFor="let movie of favorites ">
-      <app-movie-item [movie]="movie"></app-movie-item>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-10 m-auto col-md-4 col-lg-3" *ngFor="let movie of favorites ">
+        <app-movie-item [movie]="movie"></app-movie-item>
+      </div>
+    </div>
+    <div class="m-auto text-center mt-4" *ngIf="favorites.length === 0">
+      <h3 class="pt-4 mt-3" style="color: dimgrey;">No Movies Added to Favorites</h3>
     </div>
   </div>
-  <div class="m-auto text-center mt-4" *ngIf="favorites.length === 0">
-    <h3 class="pt-4 mt-3" style="color: dimgrey;">No Movies Added to Favorites</h3>
-  </div>
-</div>
+</section>

@@ -1,5 +1,5 @@
 .poster {
-  height: 90vh;
+  min-height: 90vh;
   background-size: cover;
 }
 
@@ -19,8 +19,8 @@
     padding: 5em;
     padding-top: 7em;
     position: absolute;
-    top: 60px;
-    height: 97vh;
+    top: 63px;
+    height: 95%;
     font-size: 1em;
     background: linear-gradient(81deg, rgb(14, 13, 13) 0%, rgba(26, 24, 24, 0.821) 10%, rgba(255, 253, 253, 0.02002799410779932) 100%);
   }

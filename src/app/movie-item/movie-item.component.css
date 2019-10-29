@@ -1,3 +1,7 @@
+.card-body {
+  /* background: rgb(32, 32, 32); */
+}
+
 .more {
   padding: 0.5em 0.8em;
   background-color: red;

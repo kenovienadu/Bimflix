@@ -5,5 +5,17 @@ footer {
   font-weight: 400;
   font-size: 0.8em;
   padding: 0.5em;
+  padding-top: 1em;
   width: 100%;
+}
+
+a {
+  color: white;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  padding-top: 0.5em;
 }
